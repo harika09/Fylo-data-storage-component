@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 500;
+}
+
+body{
+    background-color:#0c122c;
+    
+}
+
+section{
+    padding: 300px 200px;
+    background: url(/assets/img/bg-desktop.png) no-repeat bottom;
+    background-size: contain;
+}
+
+
+
+.main__container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Column1 Here */
+.column1{
+    position: relative;
+    background-color: #1d2c67;
+    padding: 70px 30px;
+    width: 70%;
+    border-radius: 5px 125px 5px 5px;
+}
+
+.logo{
+    position: relative;
+    bottom: 30px;
+}
+
+.folders{
+    position: relative;
+    top: 40px;
+    align-items: center;
+}
+.docu{
+    background-color: #0c122c;
+    padding: 10px 10px;
+    margin-right: 10px;
+    border-radius: .5rem;
+}
+
+.folder{
+    background-color: #0c122c;
+    padding: 12px 10px;
+    margin-right: 10px;
+    border-radius: .5rem;
+}
+
+.upload{
+    background-color: #0c122c;
+    padding: 14px 10px;
+    margin-right: 10px;
+    border-radius: .5rem;
+}
+
+/* Column2 Here */
+.column2{
+    background-color: #1d2c67;
+    padding: 40px 40px;
+    border-radius: .5rem;
+    position: relative;
+    height: 80%;
+    right: 80px;
+    top: 45px;
+}
+
+.data{
+    position: relative;
+    bottom:50px
+}
+
+.column2 span{
+    color: #fff;
+    font-weight: 700;
+}
+.data p{
+    padding-bottom: 20px;
+}
+
+
+.bandwidth{
+    width: 100%;
+    background-color: #848794;
+    border-radius: .5rem;
+}
+.consume{
+    text-align: right;
+    color: white;
+}
+
+.used{
+    width: 70%;
+    background: linear-gradient(to bottom, #ffa399 0%, #ff4d97 100%);
+    border-radius: .5rem;
+}
+/*Icon*/
+.bx{
+    position: relative;
+    top:1px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1rem;
+   
+}
+
+.remaining{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Message Bubble*/
+.message{
+    width: 200px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    color: black;
+    border-radius: .5rem;
+    bottom: 20px;
+    left: 260px;
+    margin: 0;
+}
+.message p, .message span{
+    color: black;
+}
+.message p{
+    font-size: 2rem;
+}
+
+.message span{
+    font-size: .8rem;
+}
+.bubble:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    right: 10px;
+    bottom: -19px;
+}
+
+
+
+
+@media (min-width:1024px) and (max-width:1398px) {
+
+    section{
+        padding: 200px;
+    }
+
+    .message{
+        position: relative;
+        left: 50px;
+    }
+    
+ }
+
+@media(min-width: 994px) and (max-width:1020px){
+    section{
+        padding: 300px;
+    }
+    .message{
+        position: relative;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    section{
+        padding: 150px 40px;
+        background: url(/assets/img/bg-mobile.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .main__container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column1{
+        width: 100%;
+    }
+
+    .column2{
+        position: relative;
+        left: 1px;
+    }
+
+    .message{
+        position: relative;
+        left: 400px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 720px){
+
+    section{
+        padding: 100px;
+    }
+    .message{
+        width: 150px;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        color: black;
+        border-radius: .5rem;
+        top: 190px;
+        left: 120px;
+        margin: 0;
+    }
+
+    .bubble::before{
+        display: none;
+    }
+
+    .message p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .message span{
+        font-size: .5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    section{
+        padding: 120px
+    }
+
+    .message{
+        width: 150px;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        color: black;
+        border-radius: .5rem;
+        top: 190px;
+        left: 15px;
+        margin: 0;
+    }
+
+    .bubble::before{
+        display: none;
+    }
+    .message p{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .message span{
+        font-size: .5rem;
+    }
+    
+}
