@@ -17,22 +17,21 @@ body{
 
 main{
     background: url(/assets/img/bg-desktop.png) no-repeat bottom;
-    background-size: 1550px 350px;
+    background-size: contain;
+   
 }
-
 .container{
-    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-	max-width: 100vw;
+    min-height: 100vh;
 }
 
 .main__container{
     display: grid;
     grid-gap: 140px;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Column 1 */
